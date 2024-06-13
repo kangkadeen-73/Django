@@ -6,6 +6,7 @@ from django.shortcuts import render
 app_name = "accountapp"
 
 def hello_world(request):
-    return HttpResponse('Hello world!')
+    # return HttpResponse('Hello world!')
+    return render(request, 'base.html')
 
 
